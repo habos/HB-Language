@@ -1,0 +1,8 @@
+function firstChar(){
+	var string = "dog";
+	var string2 = "car";
+	
+	if(string2 == string)
+		printf("strings equal");
+	
+}

@@ -1,0 +1,30 @@
+struct{
+	var fake = TRUE;
+	var age;
+}boy;
+
+function main(){
+	var x = 7;
+	var y;
+	y = 8;
+	z = x + y;
+	if(z%3==0){
+		while(x>0 && TRUE){
+			x = x-2;
+		}
+	}
+	else{
+		var tiger = "tiger";
+	}
+	int i;
+	for(i = 0; i < y; i++){
+		y = 9;
+	}
+	function ham(var x, var trees){
+		int gnarly = trees;
+		char super = x;
+		trees;
+	}
+	int yes = [4, 5, 8, 9];
+	int cool = ham('h', 35);
+}

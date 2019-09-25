@@ -1,0 +1,9 @@
+ReadMe for Harry's Language
+
+~Syntax resembles C
+~Variables are dynamically read like JS
+~No classes but structs are available like in C
+~Boolean type not included
+~Arrays are static
+~Comments start and end with '#'
+

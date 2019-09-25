@@ -1,0 +1,7 @@
+function main(){
+	println("Detecting missing parentheses");
+	function y(a, b{
+		println("Working");
+	}
+}
+main();

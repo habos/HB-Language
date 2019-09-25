@@ -1,0 +1,3 @@
+function println(a){
+	println(2);
+}

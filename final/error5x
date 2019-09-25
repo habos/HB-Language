@@ -1,0 +1,4 @@
+function main(){
+	var a = 5 + "no";
+}
+main();

@@ -1,0 +1,14 @@
+function node(num, string){
+	this;
+}
+
+function main(){
+	#Create object and add values#
+	var n = node(5, "cool");
+	println(n.num, n.string);
+	
+	#Update object#
+	n.num = 8;
+	println(n.num, n.string);
+}
+main();

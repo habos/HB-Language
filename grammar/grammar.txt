@@ -1,0 +1,34 @@
+unary : VARIABLE | NUMBER | functionCall | BOOLEAN | OPAREN expressions CPAREN | op | array | STRING
+
+program : statements
+
+block : OBRACE statements CBRACE
+
+statements : stat | stat statements
+
+op : PLUS | MINUS | MULTIiPLY | DIVISION | MODULO | GREATER_THAN | LESS_THAN | EQUAL | AND | OR | DOT | NOT_EQUAL | ASSIGN
+:x
+
+expressions : unary | unary op expressions
+
+stat : whileLoop | ifStat | optElse | expressions SEMICOLON | functionDef | varDef
+
+whileLoop : WHILE OPAREN expressions CPAREN block
+
+ifStat : IF OPAREN expressions CPAREN block optElse
+
+optElse : ELSE block | ELSE ifStat | *EMPTY*
+
+list : unary | unary COMMA list
+
+optList : list | *EMPTY*
+
+varList : VARIABLE | VARIABLE COMMA varList
+
+optVarList : varList | *EMPTY*
+
+varDef : VAR VARIABLE SEMICOLON | VAR VARIABLE ASSIGN expressions SEMICOLON
+
+functionDef : FUNCTION VARIABLE OPAREN optVarList CPAREN block
+
+functionCall : VARIABLE OPAREN optVarList CPAREN 

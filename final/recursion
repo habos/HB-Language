@@ -1,0 +1,17 @@
+#Recurssive finbonacci function#
+function fib(n){
+	if(n == 0){
+		0;
+	} else if(n == 1){
+		1;
+	} else {
+		fib(n-1) + fib(n-2);
+	}
+}
+
+function main(){
+	var f = fib(6);
+	println(f);
+}
+
+main();

@@ -1,0 +1,19 @@
+function sum(a, b){
+	a = a + b;
+	a;
+}
+
+function main(){
+        if(getArgCount() != 2){
+                println("Incorrect number of files");
+                end();
+        }
+        var file = openFile(getArg(1));
+	var total = 0;
+        while(atEnd(file)){
+		total = sum(total, read(file));	
+	}
+	println("The total sum of the integers in the files is:", total);
+	closeFile(file);
+}
+main();

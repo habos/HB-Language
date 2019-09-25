@@ -1,0 +1,26 @@
+function main(){
+	#Define variables#
+	var a = 10;
+	var b = 5;
+	var c = 2;
+
+	#While loop#
+	while(a > b){
+		println(a);
+		a = a - 2;
+	}
+	
+
+	#Nested iteration#
+	var d;
+	while(c < 10){
+		d = 2;
+		b = 5;
+		while(b > 0){
+			b = b - (d + 1);
+			println(b);
+		}
+		c = c + 4;
+	}
+}
+main();

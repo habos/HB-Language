@@ -1,0 +1,48 @@
+function node(key, left, right, height){
+	this;
+}
+
+function max(a, b){
+	if(a > b){
+		a;
+	} else {
+		b;
+	}
+}
+
+function height(x){
+	if(x.height > 0){
+		x.height;
+	} else {
+		0;
+	}
+}
+
+function newNode(key){
+	var new = node(key, 0, 0, 1);
+	new;
+}
+
+function rightRotate(y){
+	var x = y.left;
+	var T2 = x.right;
+
+	x.right = y;
+	y.left = T2;
+
+	y.height = max(
+}
+
+function main(){
+	if(getArgCount() != 2){
+		println("Incorrect number of files");
+		end();
+	}
+	var file = openFile(getArg(1));
+	println(read(file));
+}
+
+
+
+
+main();

@@ -1,0 +1,20 @@
+function plz (){
+	var a = 2;
+	var b;
+	function two(b){
+		b = a;
+	}
+	if(b == a){
+		var c = 3;
+	}
+	while(c > 0){
+		b = a - 1;
+	}
+	function three(a, b, c){
+		a = b/c;
+		for(var i = 0; i < 6; i = i + 1;){
+			b = c + 1;
+		}
+	}
+	three(a, b, c);
+}

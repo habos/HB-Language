@@ -1,0 +1,8 @@
+function main(){
+	var a = "really cool";
+	var b = 4;
+	while(b < a){
+		println("works");
+	}
+}
+main();

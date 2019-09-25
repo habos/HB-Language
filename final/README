@@ -1,0 +1,81 @@
+Harry's Programming Language
+
+Grammar:
+
+***********************************************************************************
+
+unary : VARIABLE | NUMBER | functionCall | BOOLEAN | OPAREN expressions CPAREN | op | array | STRING | UMINUS NUMBER | lambda
+
+program : statements
+
+block : OBRACE statements CBRACE
+
+statements : stat | stat statements
+
+op : PLUS | MINUS | MULTIiPLY | DIVISION | MODULO | GREATER_THAN | LESS_THAN | EQUAL | AND | OR | DOT | NOT_EQUAL | ASSIGN
+
+expressions : unary | unary op expressions
+
+lambda: LAMBDA OPAREN list CPAREN block
+
+stat : whileLoop | ifStat | optElse | expressions SEMICOLON | functionDef | varDef
+
+whileLoop : WHILE OPAREN expressions CPAREN block
+
+ifStat : IF OPAREN expressions CPAREN block optElse
+
+optElse : ELSE block | ELSE ifStat | *EMPTY*
+
+list : unary | unary COMMA list
+
+optList : list | *EMPTY*
+
+varList : VARIABLE | VARIABLE COMMA varList
+
+optVarList : varList | *EMPTY*
+
+varDef : VAR VARIABLE SEMICOLON | VAR VARIABLE ASSIGN expressions SEMICOLON
+
+functionDef : FUNCTION VARIABLE OPAREN optVarList CPAREN block
+
+functionCall : VARIABLE OPAREN optVarList CPAREN
+
+************************************************************************************
+
+
+Built-In Functions: 
+
+***********************************************************************************
+
+println(eargsList):  Takes an evaluated args list and prints them each out on a new line
+
+print(eargsList):  Takes an evaluated args list and prints them each out on the same line
+
+openFile(filename):  Opens the file based on the filename given as an arguement and returns the file reader
+
+read(file):  Returns one integer from the file
+
+atEnd(file):  Determines whether the file is at the end or not
+
+closeFile(file): Closes the file
+
+newArray(length): Returns a new array of size length
+
+getArray(array, index): Returns the value from the array at the specified index
+
+setArray(array, index, value): Sets the value of the given index to the given value
+
+getArgCount(): Returns the number of arguements passed by the command line
+
+getArg(index): Returns the arguement from the command line at the given index
+
+end():  Exits the program 
+
+***********************************************************************************
+
+Notes:
+
+~Syntax resembles C
+~Variables are dynamically read like JS
+~Arrays are static
+~Comments start and end with '#'

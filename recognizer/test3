@@ -1,0 +1,14 @@
+function main(){
+    var sum = 0;
+    var i = 0;
+    var sum = 0;
+    
+    printf("Enter a positive integer: ");
+    if(15){
+	printf("nope");
+    }
+
+    while(i < 0){
+        sum += i;   #sum = sum+i;#
+    }
+}

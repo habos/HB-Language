@@ -1,0 +1,15 @@
+function main(){
+	#Set arrays of size 4#
+	var array = newArray(4);
+
+	#Add variables to the matrix#
+	setArray(array, 3, "cool");
+	setArray(array, 1, 2);
+	setArray(array, 0, 8.5);
+
+	#Print out variables from the matrix#
+	println(getArray(array, 0), getArray(array, 1), getArray(array, 3));
+	
+}
+
+main();

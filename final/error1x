@@ -1,0 +1,7 @@
+function main(){
+	println("Detecting missing semicolon");
+	var a = 3;
+	var b = 4
+	println(b+a);
+}
+main();
